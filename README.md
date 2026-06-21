@@ -4,12 +4,12 @@
 
 <img src="icons/icon128.png" alt="PacTab logo — a Pac-Man eating RAM chips" width="96" height="96" />
 
-# 🟡 PacTab — Munch the clutter, save the RAM
+#  PacTab - Munch the clutter, save the RAM
 
 **Chomp your tab clutter. Keep the tabs that matter. Stop Chrome from eating your RAM.**
 
 A modern, dependency-free Chrome extension (Manifest V3) with a live tab dashboard,
-smart auto-limits, duplicate cleanup, domain insights, and protected tabs — all
+smart auto-limits, duplicate cleanup, domain insights, and protected tabs - all
 wrapped in a clean, theme-aware UI.
 
 ![Manifest](https://img.shields.io/badge/Manifest-V3-6366f1)
@@ -57,11 +57,6 @@ Gmail, YouTube, Docs, Figma, social feeds) and Chrome can quietly devour
 - 🐌 Your whole machine slows down as RAM fills up and the OS starts swapping.
 - 🔋 Battery drains faster from background tabs doing work you forgot about.
 - 🌀 Switching tabs gets laggy, and Chrome may even discard tabs on its own.
-
-Just like Pac-Man gobbling up everything in sight, **a wall of open tabs gobbles
-up your RAM** 🟡👾. PacTab flips the script — it's the Pac-Man that **eats the
-clutter for you**, so fewer pointless tabs means **less memory used, a snappier
-browser, and longer battery life**.
 
 **PacTab is different.** It keeps you within a tab budget *intelligently*:
 
