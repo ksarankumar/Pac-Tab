@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PacTab — Settings</title>
+  <link rel="stylesheet" href="settings.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="26" height="26" fill="none">
+          <defs>
+            <linearGradient id="zg" x1="5" y1="5" x2="27" y2="27" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#5eead4"/><stop offset="1" stop-color="#14b8a6"/>
+            </linearGradient>
+          </defs>
+          <path d="M16 16 L25.97 11.35 A11 11 0 1 0 25.97 20.65 Z" fill="url(#zg)"/>
+          <circle cx="15" cy="9.5" r="1.5" fill="#0f1720"/>
+        </svg>
+      </span>
+      <div>
+        <h1>PacTab Settings</h1>
+        <p>Fine-tune how your tabs are managed.</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="row toggle-row">
+        <div>
+          <h3>Enable auto-limit</h3>
+          <p>Automatically keep your tab count within budget.</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="enabled" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Tab budget</h2>
+      <div class="row">
+        <div class="field-label">
+          <h3>Maximum tabs</h3>
+          <p>The threshold before PacTab steps in.</p>
+        </div>
+        <div class="range-field">
+          <input type="range" id="maxTabs" min="3" max="60" step="1" />
+          <output id="maxTabsOut">15</output>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field-label">
+          <h3>Counting scope</h3>
+          <p>Count tabs per window or across all windows.</p>
+        </div>
+        <div class="seg" id="scope">
+          <button data-value="window">Per window</button>
+          <button data-value="global">All windows</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field-label">
+          <h3>When the limit is exceeded</h3>
+          <p>Choose which tabs get closed first.</p>
+        </div>
+        <div class="seg" id="strategy">
+          <button data-value="oldest">Close oldest</button>
+          <button data-value="newest">Close newest</button>
+          <button data-value="warn">Warn only</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Protected tabs</h2>
+      <p class="card-sub">These are never auto-closed.</p>
+      <label class="check"><input type="checkbox" id="protectPinned" /> <span>Pinned tabs</span></label>
+      <label class="check"><input type="checkbox" id="protectAudible" /> <span>Tabs playing audio</span></label>
+      <label class="check"><input type="checkbox" id="protectActive" /> <span>The active tab</span></label>
+    </section>
+
+    <section class="card">
+      <h2>Whitelisted domains</h2>
+      <p class="card-sub">Tabs on these domains are always protected. One domain per entry (e.g. <code>github.com</code>).</p>
+      <div class="add-row">
+        <input type="text" id="wl-input" placeholder="example.com" />
+        <button id="wl-add" class="btn">Add</button>
+      </div>
+      <ul id="wl-list" class="chips"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Notifications &amp; badge</h2>
+      <label class="check"><input type="checkbox" id="notify" /> <span>Show a notification when tabs are auto-closed</span></label>
+      <label class="check"><input type="checkbox" id="showBadge" /> <span>Show the live tab count on the toolbar icon</span></label>
+    </section>
+
+    <footer class="actions">
+      <span id="saved-note" class="saved-note"></span>
+      <button id="reset" class="btn ghost">Reset to defaults</button>
+      <button id="save" class="btn primary">Save changes</button>
+    </footer>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>
