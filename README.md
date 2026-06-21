@@ -41,15 +41,20 @@ wrapped in a clean, theme-aware UI.
 ---
 
 ## 🤔 Why PacTab?
+<img 
+  src="screen-shots/chrome-eating-ram.png" 
+  alt="Chrome eating RAM" 
+  width="500"
+/>
 
 We have all been there: dozens of tabs open, the browser crawling, and no idea
-which tabs are even still useful. Most "tab limiters" just **silently kill tabs** —
+which tabs are even still useful. Most "tab limiters" just **silently kill tabs** -
 which is terrifying when you lose something important.
 
 ### 🧠 The hidden cost: Chrome eats your RAM
 
 Every open tab is its own little process. Chrome isolates tabs for security and
-stability, but that means **each tab consumes real memory** — often **tens to
+stability, but that means **each tab consumes real memory** - often **tens to
 hundreds of megabytes** depending on the page. Open 30–40 heavy tabs (think
 Gmail, YouTube, Docs, Figma, social feeds) and Chrome can quietly devour
 **multiple gigabytes of RAM**. The result:
@@ -91,11 +96,9 @@ Gmail, YouTube, Docs, Figma, social feeds) and Chrome can quietly devour
 
 ## 📸 Screenshots
 
-> Replace these placeholders with real screenshots after loading the extension.
-
 | Dashboard | Settings |
-| --- | --- |
-| `docs/dashboard.png` | `docs/settings.png` |
+|---------|----------|
+| <img src="screen-shots/dashboard.png" alt="Dashboard" width="450" /> | <img src="screen-shots/settings.png" alt="Settings" width="450" /> |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
