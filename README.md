@@ -110,7 +110,7 @@ PacTab is a standard unpacked Chrome extension — **no build step required**.
 
 1. **Get the code**
    ```sh
-   git clone https://github.com/<your-username>/pactab.git
+   git clone https://github.com/ksarankumar/pac-tab.git
    cd pactab
    ```
 2. Open Chrome and go to `chrome://extensions/`.
